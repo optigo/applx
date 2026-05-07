@@ -1,0 +1,42 @@
+{
+  "name": "nextjs-front",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx fix-react2shell-next && node --max-old-space-size=8192 server.js",
+    "build": "npx fix-react2shell-next && next build",
+    "start": "npx fix-react2shell-next && set \"NODE_ENV=production\" && set \"NEXT_TELEMETRY_DISABLED=1\" && node --max-old-space-size=8192 server.js",
+    "dev-clean": "set \"NODE_ENV=production\" && set \"NEXT_TELEMETRY_DISABLED=1\" && node --max-old-space-size=8192 server.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@hello-pangea/dnd": "^18.0.1",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.12",
+    "@mui/x-data-grid": "^7.29.9",
+    "@mui/x-date-pickers": "^8.27.2",
+    "browser-image-compression": "^2.0.2",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "file-saver": "^2.0.5",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "jszip": "^3.10.1",
+    "lodash": "^4.17.21",
+    "next": "15.5.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-dropzone": "^14.3.8",
+    "react-window": "^1.8.11",
+    "sheetjs-style": "^0.15.8"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2"
+  }
+}
